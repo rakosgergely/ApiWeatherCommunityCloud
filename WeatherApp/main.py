@@ -40,7 +40,7 @@ def main() -> None:
         st.warning("Adj meg egy létező városnevet.")
         return
 
-    if search_clicked or city_name:
+    if search_clicked:
         try:
             city = cached_geocode_city(city_name)
             if city is None:
